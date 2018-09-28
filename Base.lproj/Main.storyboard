@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dices" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="casinoBackground" translatesAutoresizingMaskIntoConstraints="NO" id="6eL-uz-elY">
+                                <rect key="frame" x="-408" y="0.0" width="1191" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="N38-of-Jmw">
+                                <rect key="frame" x="48" y="354.66666666666669" width="279" height="103"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice1" translatesAutoresizingMaskIntoConstraints="NO" id="MGo-PH-hyB">
+                                        <rect key="frame" x="0.0" y="0.0" width="103" height="103"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="MGo-PH-hyB" secondAttribute="height" multiplier="1:1" id="grz-cU-gqt"/>
+                                            <constraint firstAttribute="height" constant="103" id="vwf-8i-EA5"/>
+                                            <constraint firstAttribute="width" constant="103" id="wzJ-57-E46"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dice1" translatesAutoresizingMaskIntoConstraints="NO" id="4Tp-pC-CFw">
+                                        <rect key="frame" x="176" y="0.0" width="103" height="103"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="103" id="GVd-fA-s7X"/>
+                                            <constraint firstAttribute="width" constant="103" id="IqS-T9-SMF"/>
+                                            <constraint firstAttribute="width" secondItem="4Tp-pC-CFw" secondAttribute="height" multiplier="1:1" id="de2-xs-D1v"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="9zA-2G-awz"/>
+                                    <constraint firstAttribute="width" secondItem="N38-of-Jmw" secondAttribute="height" multiplier="279:103" id="AfR-9y-o1o"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="103" id="IEr-KY-6zj"/>
+                                    <constraint firstAttribute="width" constant="279" id="b11-il-CQQ"/>
+                                    <constraint firstAttribute="width" secondItem="N38-of-Jmw" secondAttribute="height" multiplier="279:103" id="cJc-rD-c20"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="279" id="xUl-tH-roF"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYQ-h2-TqH">
+                                <rect key="frame" x="0.0" y="732" width="375" height="46"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UYQ-h2-TqH" secondAttribute="height" multiplier="375:46" id="N8r-3i-wWd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Tirar los dados">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQr-ZP-H93"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agita el dispositivo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWc-3H-4sv">
+                                <rect key="frame" x="101.33333333333333" y="633.66666666666663" width="172.33333333333337" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CWc-3H-4sv" secondAttribute="height" multiplier="172:27" id="zBi-bg-yGA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- o -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oY-ax-pcx">
+                                <rect key="frame" x="171" y="678.66666666666663" width="33.333333333333343" height="27.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0oY-ax-pcx" secondAttribute="height" multiplier="11:9" id="mbX-wF-ajP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lasVegasLogo" translatesAutoresizingMaskIntoConstraints="NO" id="7g8-uz-PbK">
+                                <rect key="frame" x="75" y="74" width="225" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="EHk-h2-xfE"/>
+                                    <constraint firstAttribute="width" secondItem="7g8-uz-PbK" secondAttribute="height" multiplier="225:157" id="Jk3-QL-cYS"/>
+                                    <constraint firstAttribute="height" constant="157" id="qDV-kq-yeN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UYQ-h2-TqH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5d0-f8-szl"/>
+                            <constraint firstItem="UYQ-h2-TqH" firstAttribute="top" secondItem="0oY-ax-pcx" secondAttribute="bottom" constant="26" id="6w1-r8-F4s"/>
+                            <constraint firstItem="7g8-uz-PbK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dXL-hc-d14"/>
+                            <constraint firstItem="UYQ-h2-TqH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hbv-5V-QKO"/>
+                            <constraint firstItem="N38-of-Jmw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="irb-cV-e6t"/>
+                            <constraint firstItem="0oY-ax-pcx" firstAttribute="top" secondItem="CWc-3H-4sv" secondAttribute="bottom" constant="18" id="lZV-fP-Hqr"/>
+                            <constraint firstItem="CWc-3H-4sv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mcL-YA-oiv"/>
+                            <constraint firstItem="7g8-uz-PbK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="phu-cd-cUs"/>
+                            <constraint firstItem="N38-of-Jmw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tLR-uf-YyY"/>
+                            <constraint firstItem="0oY-ax-pcx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uL2-ir-Iqk"/>
+                            <constraint firstItem="UYQ-h2-TqH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zdy-83-94W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="leftDiceImageView" destination="MGo-PH-hyB" id="gnQ-HX-J9P"/>
+                        <outlet property="playButton" destination="UYQ-h2-TqH" id="aRm-K5-ZpS"/>
+                        <outlet property="rightDiceImageView" destination="4Tp-pC-CFw" id="Yst-Dt-OFY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.00492610837438"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dice1" width="1114" height="1114"/>
+        <image name="casinoBackground" width="1191" height="670"/>
+        <image name="lasVegasLogo" width="225" height="157.5"/>
+    </resources>
+</document>

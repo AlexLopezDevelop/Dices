@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="casinoBackground" translatesAutoresizingMaskIntoConstraints="NO" id="aPG-Vo-grs">
+                                <rect key="frame" x="-408" y="0.0" width="1191" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lasVegasLogo" translatesAutoresizingMaskIntoConstraints="NO" id="agT-9N-kDk">
+                                <rect key="frame" x="75" y="74" width="225" height="209"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="agT-9N-kDk" secondAttribute="height" multiplier="225:209" id="YmO-kj-PwS"/>
+                                    <constraint firstAttribute="width" constant="225" id="gGc-fE-j5q"/>
+                                    <constraint firstAttribute="height" constant="209" id="tTJ-5l-OOB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dices" translatesAutoresizingMaskIntoConstraints="NO" id="jQI-lW-Bsg">
+                                <rect key="frame" x="68" y="319" width="239" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="47B-jR-2Vx"/>
+                                    <constraint firstAttribute="width" secondItem="jQI-lW-Bsg" secondAttribute="height" multiplier="239:174" id="6OR-Ep-Sss"/>
+                                    <constraint firstAttribute="height" constant="174" id="9w6-1F-AyS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olG-hI-oTn">
+                                <rect key="frame" x="0.0" y="593" width="375" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="olG-hI-oTn" secondAttribute="height" multiplier="125:12" id="MYM-el-qKw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="27"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="olG-hI-oTn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Qx-zM-36t"/>
+                            <constraint firstItem="jQI-lW-Bsg" firstAttribute="top" secondItem="agT-9N-kDk" secondAttribute="bottom" constant="36" id="2i9-gQ-9N9"/>
+                            <constraint firstItem="jQI-lW-Bsg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="BBk-V0-SmJ"/>
+                            <constraint firstItem="jQI-lW-Bsg" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Z6h-Wi-dig"/>
+                            <constraint firstItem="olG-hI-oTn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="et4-yS-hay"/>
+                            <constraint firstItem="agT-9N-kDk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kXf-3Y-9GN"/>
+                            <constraint firstItem="olG-hI-oTn" firstAttribute="top" secondItem="jQI-lW-Bsg" secondAttribute="bottom" constant="100" id="ls8-ef-dJX"/>
+                            <constraint firstItem="agT-9N-kDk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="waB-84-zlF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dices" width="770" height="626"/>
+        <image name="casinoBackground" width="1191" height="670"/>
+        <image name="lasVegasLogo" width="225" height="157.5"/>
+    </resources>
+</document>
